@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
-
-// import { AppRouterModule } from './app.routing';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutersModule } from './app.routing';
+
+import { ProductService } from './shared/product.service';
+import { SupplierService } from './shared/suppliers.service';
+import { HandleError } from './shared/handleErr.service';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,15 @@ import { AppRoutersModule } from './app.routing';
   ],
   imports: [
     BrowserModule,
-    AppRoutersModule
+    AppRoutersModule,
+    HttpModule,
+    HandleError
   ],
-  providers: [],
+  providers: [
+    SupplierService,
+    ProductService,
+    HandleError
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
