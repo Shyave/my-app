@@ -1,0 +1,13 @@
+.section{
+    margin: 16px 0;
+}
+
+.list-group-item{
+    cursor: pointer;
+    outline: none;
+}
+
+.router-section{
+    border: 1px solid #bbbaba;
+    height: calc(100vh - 200px);
+}
