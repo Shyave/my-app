@@ -1,19 +1,19 @@
 <div class="list-container">
     <div class="row">
         <div class="col-sm-4">
-            <span class="key">Supplier name</span>:
-            <span class="value">Shyave</span>
+            <span class="key">Name</span>:
+            <span class="value">{{name}}</span>
         </div>
         <div class="col-sm-4">
-            <span class="key">Place</span>:
-            <span class="value">Ballari</span>
+            <span class="key">Create date</span>:
+            <span class="value">{{ createdDate | date:'dd MMM yyyy' }}</span>
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-4">
-            <span class="key">Created date</span>:
-            <span class="value">27 Jul 1989</span>
+            <span class="key">Other Info1</span>:
+            <span class="value">{{other1}}</span>
         </div>
     </div>
 </div>

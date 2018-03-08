@@ -1,16 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ListComponent } from '../common/lib/list-view/list.component';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  templateUrl: './products.component.html'
 })
 export class ProductsComponent implements OnInit {
-
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }

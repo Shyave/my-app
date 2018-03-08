@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-list-view',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ListComponent implements OnInit {
+    @Input() name = 'name';
+    @Input() createdDate = 'createdDate';
+    @Input() updatedDate = 'updatedDate';
+    @Input() other1 = 'other1';
     constructor() { }
-
     ngOnInit() { }
 }

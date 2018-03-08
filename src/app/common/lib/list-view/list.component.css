@@ -1,8 +1,14 @@
 .list-container{
     width: 100%;
-    border: 1px solid #e7e6e6;
+    border-top: 1px solid #e7e6e6;
+    border-right: 1px solid #e7e6e6;
+    border-left: 1px solid #e7e6e6;
     display: inline-block;
     padding: 16px;
+}
+
+.list-container:last-child{
+    border-bottom: 1px solid #e7e6e6;
 }
 
 .key{

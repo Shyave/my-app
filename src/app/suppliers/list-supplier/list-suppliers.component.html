@@ -1,0 +1,14 @@
+<div *ngIf="suppData && suppData.length > 0">
+    <app-list-view *ngFor="let data of suppData" name="{{data.prodName}}" createdDate="{{data.createdAt}}" updatedDate="{{data.updatedAt}}" other1="{{data.hsnCode}} (hsn code)"></app-list-view>
+</div>
+
+<div *ngIf="suppData && suppData.length == 0">
+    <div class="list-container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h5>No data found, Click <a href="#" routerLink="addSupplier">here</a> to add</h5>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app';
 
   navBar = [
-    { name: 'Suppliers', desc: 'This section is related to suppliers', link: 'suppliers'},
-    { name: 'Products', desc: 'This section is related to products', link: 'products'}
+    { name: 'Products', desc: 'This section is related to products', link: 'products'},
+    { name: 'Suppliers', desc: 'This section is related to suppliers', link: 'suppliers'}
   ];
 }

@@ -9,7 +9,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class SupplierService {
-    private url = 'http://trivarna.in/api/products';
+    private url = 'http://trivarna.in/api/suppliers';
     constructor( private http: Http, private errHandle: HandleError) {}
 
     getSuppliers(): Observable<string> {
