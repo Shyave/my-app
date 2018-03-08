@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import { ProductsComponent } from './products/products.component';
+import { ListComponent } from './common/lib/list-view/list.component';
 import { AppRoutersModule } from './app.routing';
 
 import { ProductService } from './shared/product.service';
@@ -16,7 +17,8 @@ import { HandleError } from './shared/handleErr.service';
   declarations: [
     AppComponent,
     SuppliersComponent,
-    ProductsComponent
+    ProductsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

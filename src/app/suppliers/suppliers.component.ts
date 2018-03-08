@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SupplierService } from '../shared/suppliers.service';
+import { ListComponent } from '../common/lib/list-view/list.component';
 
 @Component({
   selector: 'app-suppliers',

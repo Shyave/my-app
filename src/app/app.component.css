@@ -8,6 +8,6 @@
 }
 
 .router-section{
-    border: 1px solid #bbbaba;
-    height: calc(100vh - 200px);
+    width: 100%;
+    display: inline-block;
 }
