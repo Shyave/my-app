@@ -2,7 +2,7 @@ This repository is used for showing the demo of the ng4 app. A small app built b
 
 I have implemented this app based on the following concepts:
 1. Data binding.
-2. Creating components & it's interactions between Parent component to Child component by using (@Input). I have done reverse by using (@Output).
+2. Creating components & it's interactions between Parent component to Child component by using (@Input). I have not done the  reverse by using (@Output).
 3. Routing.
 4. Child Routes.
 5. Data Get & Post by using Observables.
