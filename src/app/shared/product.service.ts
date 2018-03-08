@@ -23,4 +23,10 @@ export class ProductService {
             .map(outPut => outPut.json())
             .catch((e: any) => Observable.throw(this.errHandle.handleError(e)));
     }
+
+    addProduct(data): Observable<string> {
+        return this.http.post(this.url, data)
+            .map(outPut => outPut.json())
+            .catch((e: any) => Observable.throw(this.errHandle.handleError(e)));
+    }
 }
