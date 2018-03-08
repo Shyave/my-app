@@ -17,4 +17,10 @@ export class ProductService {
             .map(outPut => outPut.json())
             .catch((e: any) => Observable.throw(this.errHandle.handleError(e)));
     }
+
+    getProductDetail(id): Observable<string> {
+        return this.http.get(`${this.url}/${id}`)
+            .map(outPut => outPut.json())
+            .catch((e: any) => Observable.throw(this.errHandle.handleError(e)));
+    }
 }

@@ -9,7 +9,7 @@
 
 <!-- This section for listing all the products, only if data exists -->
 <div *ngIf="prodData && prodData.length > 0">
-    <app-list-view *ngFor="let data of prodData" name="{{data.prodName}}" createdDate="{{data.createdAt}}" updatedDate="{{data.updatedAt}}" other1="{{data.hsnCode}} (hsn code)"></app-list-view>
+    <app-list-view *ngFor="let data of prodData" name="{{data.prodName}}" createdDate="{{data.createdAt}}" updatedDate="{{data.updatedAt}}" other1="{{data.hsnCode}} (hsn code)" [routerLink]="['viewProduct', data._id]"></app-list-view>
 </div>
 
 <!-- This section for showing no data found -->

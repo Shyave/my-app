@@ -2,3 +2,7 @@
 body{
     padding: 16px;
 }
+
+.active-page{
+    color: #a09d9d;
+}
