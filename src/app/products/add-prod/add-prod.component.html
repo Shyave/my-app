@@ -1,27 +1,29 @@
 <!-- Navigation row -->
 <div class="row">
-  <div class="col-sm-12">
-      <a href="#" routerLink="/products">List</a> 
-      &nbsp;&nbsp;/&nbsp;&nbsp;
-      <span href="#" class="active-page">Add Product</span>
-  </div>
+    <div class="col-sm-12">
+        <a href="#" routerLink="/products">List</a>
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+        <span href="#" class="active-page">Add Product</span>
+    </div>
 </div>
 <br>
-  
+
 <!-- Form to add suppliers -->
-<form (ngSubmit)="submitData()" #form="ngForm"> 
+<form (ngSubmit)="submitData()" #form="ngForm">
     <div class="row">
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="prodName">Product Name*</label>
-                <input type="text" class="form-control" id="prodName" aria-describedby="prodNameHelp" placeholder="Product name" [(ngModel)]="product.prodName" name="prodName" #pName="ngModel" required />
+                <input type="text" class="form-control" id="prodName" aria-describedby="prodNameHelp" placeholder="Product name" [(ngModel)]="product.prodName"
+                    name="prodName" #pName="ngModel" required />
                 <small id="prodNameHelp" class="text-danger" *ngIf="pName.invalid && pName.touched">Product name required</small>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="hsnCode">HSN code*</label>
-                <input type="text" class="form-control" id="hsnCode" placeholder="Code given by govt" [(ngModel)]="product.hsnCode" name="hsnCode" #hCode="ngModel" required />
+                <input type="text" class="form-control" id="hsnCode" placeholder="Code given by govt" [(ngModel)]="product.hsnCode" name="hsnCode"
+                    #hCode="ngModel" required />
                 <small id="hsnCodeHelp" class="text-danger" *ngIf="hCode.invalid && hCode.touched">HSN code required</small>
             </div>
         </div>
@@ -33,7 +35,8 @@
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="category">Category*</label>
-                <select class="form-control" id="category" aria-describedby="categoryHelp" [(ngModel)]="product.category" (change)="selectUnitValue()" name="category" required #cat="ngModel">
+                <select class="form-control" id="category" aria-describedby="categoryHelp" [(ngModel)]="product.category" (change)="selectUnitValue()"
+                    name="category" required #cat="ngModel">
                     <option value="Raw Material">Raw Material</option>
                     <option value="Spare Parts">Spare Parts</option>
                     <option value="Finished goods">Finished goods</option>
@@ -44,7 +47,8 @@
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="unitOfMeasure">Unit of Measure</label>
-                <select disabled class="form-control" id="unitOfMeasure" aria-describedby="unitOfMeasureHelp" [(ngModel)]="product.unitOfMeasure" name="unitOfMeasure">
+                <select disabled class="form-control" id="unitOfMeasure" aria-describedby="unitOfMeasureHelp" [(ngModel)]="product.unitOfMeasure"
+                    name="unitOfMeasure">
                     <option value="kg">Kg</option>
                     <option value="units">Units</option>
                 </select>

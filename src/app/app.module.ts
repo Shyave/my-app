@@ -21,28 +21,28 @@ import { ProdListComponent } from './products/prod-list/prod-list.component';
 import { AddProdComponent } from './products/add-prod/add-prod.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProductsComponent,
-    SuppliersComponent,
-    AddSupplierComponent, SuppliersListComponent,
-    ListComponent,
-    ProdViewComponent,
-    ProdListComponent,
-    AddProdComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutersModule,
-    HttpModule,
-    FormsModule,
-    HandleError
-  ],
-  providers: [
-    SupplierService,
-    ProductService,
-    HandleError
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ProductsComponent,
+        SuppliersComponent,
+        AddSupplierComponent, SuppliersListComponent,
+        ListComponent,
+        ProdViewComponent,
+        ProdListComponent,
+        AddProdComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutersModule,
+        HttpModule,
+        FormsModule,
+        HandleError
+    ],
+    providers: [
+        SupplierService,
+        ProductService,
+        HandleError
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

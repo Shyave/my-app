@@ -1,26 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header>
-  <div class        = "bs-component">
-    <nav class      = "navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class      = "navbar-brand" href      = "#">My App</a>
-    </nav>
-  </div>
+    <div class="bs-component">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">My App</a>
+        </nav>
+    </div>
 </header>
 
-<section class      = "section">
-  <div class        = "row">
-    <!-- This section is for the navigation / routing links -->
-    <div class      = "col-sm-3">
-        <ul class   = "list-group inverse">
-          <li class = "list-group-item" *ngFor = "let nav of navBar" title = "{{nav.desc}}" routerLink = "{{nav.link}}" routerLinkActive="active">{{nav.name}}</li>
-        </ul>
-    </div>
+<section class="section">
+    <div class="row">
+        <!-- This section is for the navigation / routing links -->
+        <div class="col-sm-3">
+            <ul class="list-group inverse">
+                <li class="list-group-item" *ngFor="let nav of navBar" title="{{nav.desc}}" routerLink="{{nav.link}}" routerLinkActive="active">{{nav.name}}</li>
+            </ul>
+        </div>
 
-    <!-- This section is for routing output -->
-    <div class      = "col-sm-9">
-      <div class    = "router-section">
-        <router-outlet></router-outlet>
-      </div>
+        <!-- This section is for routing output -->
+        <div class="col-sm-9">
+            <div class="router-section">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
     </div>
-  </div>
 </section>

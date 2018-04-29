@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-suppliers',
-  templateUrl: './suppliers.component.html',
+    selector: 'app-suppliers',
+    templateUrl: './suppliers.component.html',
 })
 
 export class SuppliersComponent implements OnInit {
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() { }
+    ngOnInit() { }
 }
